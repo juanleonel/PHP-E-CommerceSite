@@ -1,8 +1,10 @@
 <?php
 
-  $arrayName = array('0' => array('id' => 1, 'complete_name' => 'Juan', ) );
-
-  echo $arrayName[0]['complete_name'];
+  $arrayName =  array('id' => 1, 'complete_name' => 'Juan'  );
+  print_r($arrayName);
+  foreach ($arrayName as $value) {
+    echo $value;
+  }
 //  print_r($arrayName);
 /*
 
