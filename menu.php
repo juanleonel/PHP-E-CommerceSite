@@ -21,12 +21,17 @@
               </li>
 
          </ul>
-         <form class="navbar-form navbar-right">
+         <form class="navbar-form navbar-left">
            <div class="form-group">
              <input type="text" placeholder="Search.." class="form-control">
            </div>
            <button type="submit" class="btn btn-success">Search</button>
          </form>
+         <ul class="nav navbar-nav navbar-right">
+
+           <li class="active"><a href="#"><span class=" glyphicon glyphicon-shopping-cart "  ></span> &nbsp; Cart </a></li>
+         </ul>
+
        </div><!--/.navbar-collapse -->
      </div>
    </nav>

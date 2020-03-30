@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Shopp</title>
     <?php  include 'common/resources.php' ?>
   </head>
   <body>
@@ -15,7 +15,7 @@
         <div class="row">
 
           <?php  include_once 'allitemslist.php' ?>
-          
+
         </div>
       </div>
 
