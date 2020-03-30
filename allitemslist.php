@@ -1,6 +1,7 @@
 <?php
 
     include_once 'conn/conn.php';
+  
 
     $stmt = $pdo->prepare('CALL spSelProducts');
 
