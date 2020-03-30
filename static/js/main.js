@@ -32,7 +32,7 @@
         let li  = document.createElement('li');
 
         a.title     = link_name;
-        a.href      = 'itemlist.php?' + link;
+        a.href      = 'itemlist.php?category=' + link;
         a.innerHTML = link_name
 
         li.appendChild(a);

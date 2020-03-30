@@ -6,9 +6,22 @@
     <?php  include 'common/resources.php' ?>
   </head>
   <body>
-    <?php   include_once 'menu.php'; ?>
+  <div class="navbar-wrapper">
+
+    <div class="containder">
+      <?php   include_once 'menu.php'; ?>
+
+      <div class="container marketing">
+        <div class="row">
+
+          <?php  include_once 'allitemslist.php' ?>
+          
+        </div>
+      </div>
 
 
+    </div>
+  </div>
 
   </body>
   <?php  include 'common/scripts.php' ?>
