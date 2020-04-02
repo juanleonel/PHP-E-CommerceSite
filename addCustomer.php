@@ -7,7 +7,6 @@
 
       try {
 
-        $stmt = $pdo->prepare("CALL spInsCustomer(?,?,?,?,?,?,?,?,?,?)");
 
         $email          = $_POST['email'];
         $password       = getHashPassword($_POST['password']);
@@ -19,6 +18,8 @@
         $zip_code       = $_POST['zip_code'];
         $country        = $_POST['country'];
         $phone_no       = $_POST['phone_no'];
+
+        $stmt = $pdo->prepare("CALL spInsCustomer(?,?,?,?,?,?,?,?,?,?)");
 
         $stmt->bindParam(1, $email);
         $stmt->bindParam(2, $password);
@@ -34,6 +35,8 @@
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+        $pdo = null;
+        
         if (count($result) > 0)
         {
          echo  "<p> Dear, " . $result[0]['complete_name'] . " your account is successfully created. </p>" ;

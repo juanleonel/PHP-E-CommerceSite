@@ -21,11 +21,12 @@
               </li>
 
          </ul>
-         <form class="navbar-form navbar-left">
+         <form method="post" action="searchitemslist.php" class="navbar-form navbar-left">
            <div class="form-group">
-             <input type="text" placeholder="Search.." class="form-control">
+             <input type="text" placeholder="Search.." name="criteria" class="form-control">
            </div>
-           <button type="submit" class="btn btn-success">Search</button>
+           <input type="submit" name="submit" value="Search" class="btn btn-success">
+
          </form>
          <ul class="nav navbar-nav navbar-right">
 

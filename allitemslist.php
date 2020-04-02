@@ -4,8 +4,9 @@
 
     $category =  ($_REQUEST) ? $_REQUEST['category'] : '';
 
+    $sql = 'CALL spSelProductsHref(?)';
 
-    $stmt = $pdo->prepare('CALL spSelProducts(?)');
+    $stmt = $pdo->prepare($sql);
 
     $stmt->bindParam(1, $category);
 
@@ -28,5 +29,7 @@
 
       echo "";
     }
+
+    $pdo = null;
 
 ?>

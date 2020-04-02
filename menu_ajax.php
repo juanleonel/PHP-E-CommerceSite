@@ -11,6 +11,8 @@
 
       $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+      $pdo = null;
+
       echo json_encode($data);
 
     }

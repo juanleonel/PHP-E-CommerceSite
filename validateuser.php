@@ -19,6 +19,8 @@
 
         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+        $pdo = null;
+
         if (count($data) > 0 && verifyPassword($password, $data[0]['password']) ){
             echo '<p class="bg-primary">> Welcome ' . $data[0]['complete_name'] . ' to our Shopping Mall </p> <br> ';
         }else{
