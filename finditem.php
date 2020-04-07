@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-8">
-                        <form method="post" action="" >
+                        <form method="post" action="cart.php" >
                             <input type="hidden" value="' .$product['Id']. '">
                             <div class="thumbnail">                        
                                 <h1>' . $product['product_name'] . '</h1>                       
@@ -38,7 +38,7 @@
                                     <div class="">
                                         <label class=""> Quantity</label>
                                         <div class="">
-                                            <input class="" type="number">
+                                            <input class="" type="number" min="1">
                                         </div>                                    
                                     </div>                                    
                                         <label class=""> Price: </label> <strong>  $ ' . number_format($product['price']) . ' </strong>                                
