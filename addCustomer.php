@@ -1,6 +1,6 @@
 <?php
     include_once 'conn/conn.php';
-
+    include_once 'common/utilities.php';
 
     if(isset($_POST))
     {
@@ -51,9 +51,5 @@
 
     }
 
-
-    function getHashPassword($pwd)
-    {
-      return password_hash($pwd, PASSWORD_DEFAULT);
-    }
+ 
 ?>

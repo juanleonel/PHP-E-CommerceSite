@@ -7,13 +7,15 @@
      <?php  include 'common/resources.php' ?>
    </head>
    <body>
+   <?php   include_once 'menu.php'; ?>
     <div class="container">
+      
       <div class="col-md-4 col-sm-4">
 
-        <form class="" action="validateuser.php" method="post" >
+        <form id="frmSigin" class="" action="validateuser.php" method="post" >
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
             <span id="emailmsg"></span>
           </div>
           <div class="form-group">
@@ -27,8 +29,10 @@
         </form>
 
       </div>
-      </div>
-
- 
+    </div>
+   
    </body>
+    <?php  include 'common/scripts.php' ?>
+    <script src="static/js/signin.js" ></script>
  </html>
+ 
