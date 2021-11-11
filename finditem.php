@@ -6,7 +6,7 @@
          
         try{
              
-            $id = session_status $_REQUEST['Id'];        
+            $id =  $_REQUEST['Id'];        
         
             $sql = 'CALL spSelProductDetails(?)';
             
