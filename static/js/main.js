@@ -43,23 +43,6 @@
 
 
 
-/*
-      for (var d of data)
-      {
-
-
-        if (!contains(clientArray, d.category_name)) {
-
-         clientArray.push(d.category_name);
-
-         updateMenu(d.category_name);
-
-        } else alert("You already have a client by that name!");
-
-
-      }*/
-
-
   };
 
    updateMenu = function(data)
@@ -84,5 +67,11 @@
      }
      return false;
    };
+
+
+   // Cart
+
+   
+
 
 })();

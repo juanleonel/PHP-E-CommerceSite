@@ -1,0 +1,13 @@
+.cart-empty{
+  background-color: brown;   
+  padding: 10px;
+  border-radius: 5px;
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
+  width: 50%;
+  margin: 10% auto;
+  text-align: center;
+}
+.hide--grid--narrow{
+    display: none;
+}

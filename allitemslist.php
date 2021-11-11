@@ -13,7 +13,8 @@
     $stmt->execute();
 
     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+    unset($stmt);
+    
     foreach ($data as $row) {
       echo ' <div class="col-lg-4">
                 <img class="img-circle" src="' . $row['image_name'] . '" alt="Generic placeholder image" width="140" height="140">

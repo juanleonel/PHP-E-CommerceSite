@@ -1,3 +1,8 @@
+<!-- alert -->
+
+<div id="alertGlobal"></div>
+
+<!-- alert -->
 <nav class="navbar navbar-inverse ">
      <div class="container">
        <div class="navbar-header">
@@ -11,8 +16,8 @@
        </div>
        <div id="navbar" class="navbar-collapse collapse">
          <ul id="navbar-element" class="nav navbar-nav">
-              <li class="active"><a href="index.php">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="active"><a href="itemlist.php">Home</a></li>
+              <li><a href="">About</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
                 <ul id="dropdown-menu" class="dropdown-menu">
@@ -29,8 +34,19 @@
 
          </form>
          <ul class="nav navbar-nav navbar-right">
-
-           <li class="active"><a href="#"><span class=" glyphicon glyphicon-shopping-cart "  ></span> &nbsp; Cart </a></li>
+          <?php
+            session_start();
+            if(empty($_SESSION['data'])){
+              echo '<li class="infouser" ><a href="signin.php">Login</a></li>
+                    <li class="infouser"  ><a href="validatesignup.php">Signup</a></li> ';
+            }else{
+              echo '<li class="infouser" ><a href="signin.php"> Welcome! '.$_SESSION['data']['complete_name'].'</a></li> 
+                    <li class="infouser"  ><a href="logout.php">Log out</a></li> ';
+            }
+            
+                                                     
+          ?>
+           <li class="active"><a href="detailcart.php"><span class=" glyphicon glyphicon-shopping-cart "  ></span> &nbsp; Cart </a></li>
          </ul>
 
        </div><!--/.navbar-collapse -->
